@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fb93b3;
+}
+
+header {
+    background-image: url('images/banner.png');
+    height: 50vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 700;
+    font-size: 120px;
+    text-shadow: -15px 5px 20px #ced0d3;
+    letter-spacing: 0.02em;
+    color: #bb62ff;
+    text-shadow: 5px 5px 0px #ff62c5,
+        10px 10px 0px #8415d9,
+        15px 15px 0px #FF80BF,
+        20px 20px 0px #EF5097,
+        25px 25px 0px #9f68ac,
+        30px 30px 0px #e090c9;
+    margin-bottom: 70px;
+}
+
+h2 {
+    font-size: 60px;
+    color: #bb62ff;
+    border-bottom: solid 5px #000000;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+
+
+p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.photos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+   margin-left: auto;
+   margin-right: auto;
+   width:900px;
+   border: 5px solid #bb62ff;
+   margin-top: 30px;
+}
+
+.photos img {
+    width: 300px;
+    height: 300px;
+}
+
+li {
+    font-size:18px;
+}
+
+.moments li {
+    margin-bottom: 5px;
+}
+
+.reasons ul li {
+    position: relative; /* Position the heart relative to the text */
+    display: inline-block; /* Align list items horizontally in the center */
+    text-align: left; /* Ensure text starts from the left within each list item */
+    padding-left: 20px; /* Add padding to the left for the heart */
+}
+
+.reasons ul li::before {
+    content: "♥"; /* Insert the heart symbol */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto; 
+    color: #bb62ff; 
+    font-size: 1.7em; 
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+footer {
+    margin-top: 30px;
+}
